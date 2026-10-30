@@ -1,0 +1,27 @@
+{
+  "id": "varco-sound",
+  "name": "VARCO Sound",
+  "version": "0.2.0",
+  "description": "AI가 VARCO Sound 웹 계정으로 사운드(SFX·앰비언스·음악)를 생성하고, 생성한 사운드를 목록으로 들어보고 저장하는 플러그인",
+  "main": "main.js",
+  "renderer": "renderer.js",
+  "styles": "styles.css",
+  "settingsSchema": {
+    "type": "object",
+    "properties": {
+      "outputDir": {
+        "type": "string",
+        "title": "저장 폴더",
+        "description": "생성한 사운드를 저장할 기본 폴더(절대 경로). 비워 두면 음악\\VARCO Sound. 에이전트는 호출마다 saveDir로 Unity Assets 폴더 등을 직접 지정할 수 있습니다."
+      }
+    }
+  },
+  "tags": [
+    "VARCO",
+    "사운드",
+    "SFX",
+    "오디오",
+    "게임"
+  ],
+  "usage": "에이전트에게 \"이 게임에 필요한 사운드 만들어줘\"라고 하면 생성 후 VARCO Sound 화면에서 항목별로 듣고 고릅니다(전체 자동선택 가능)."
+}
